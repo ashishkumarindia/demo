@@ -1,0 +1,21 @@
+<table>
+    <tr>
+        <th scope="col">fullName</th>
+        <th scope="col">brand</th>
+        <th scope="col">quantity</th>
+        <th scope="col">expiryDate</th>
+        <th scope="col">Notes</th>
+    </tr>
+
+    <tr>
+        <td>{{medicineDetails?.fullName}}</td>
+        <td>{{medicineDetails?.brand}}</td>
+        <td>{{medicineDetails?.quantity}}</td>
+        <td>{{medicineDetails?.expiryDate}}</td>
+        <td>{{medicineDetails?.notes}}
+            <button (click)="update(medicineDetails)" mat-button color="primary">Edit</button>
+
+        </td>
+
+    </tr>
+</table>

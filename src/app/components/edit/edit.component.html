@@ -1,0 +1,11 @@
+<form [formGroup]="editForm" class="example-form" novalidate>
+    <mat-label>Notes</mat-label>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <textarea matInput formControlName="notes"></textarea>
+    </mat-form-field>
+    <p> <button (click)="update()" mat-button color="primary">Save</button>
+        <button (click)="close()" mat-button color="primary">Close</button>
+    </p>
+
+</form>
